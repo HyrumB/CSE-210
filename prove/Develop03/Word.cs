@@ -4,14 +4,14 @@ namespace Develop03
     class Word
     {   
         // --- Parameters ---
-        private bool hidden;
-        private string word;
+        private bool _hidden;
+        private string _word;
 
         // --- Constructor ---
-        public Word(string word)
+        public Word(string _word)
         {
-            hidden = false;
-            this.word = word;
+            _hidden = false;
+            this._word = _word;
         }
 
         // --- Methods ---
@@ -20,22 +20,22 @@ namespace Develop03
         {
             // if hidden is true this returns _ at the length of word
             // if false it returns the word as normal
-            return hidden ? new string('_', word.Length) : word;
+            return _hidden ? new string('_', _word.Length) : _word;
         }
 
         public bool IsHidden()
         {
-            return hidden;
+            return _hidden;
         }
 
         public void Hide()
         {
-            hidden = true;
+            _hidden = true;
         }
 
         public void Show()
         {
-            hidden = false;
+            _hidden = false;
         }
     }
 }
