@@ -18,8 +18,8 @@ namespace Develop03
 
         public string GetWord()
         {
-            // if hidden is true this returns _ at the length of word
-            // if false it returns the word as normal
+            // If hidden is true this returns _ at the length of word
+            // If false it returns the word as normal
             return _hidden ? new string('_', _word.Length) : _word;
         }
 
